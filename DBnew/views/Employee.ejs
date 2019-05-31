@@ -1,0 +1,73 @@
+<!––home.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <title>DB</title>
+  </head>
+  <body>
+   <nav class="navbar bg-light">
+      <a class="navbar-brand" >Database</a>
+      <form method="get" action="/">
+        <input type="submit" value = "Logout">
+      </form>
+      <form method="get" action="/home">
+        <input type="submit" value = "Home">
+      </form>
+    </nav>
+    </nav>
+
+	
+    <div
+      class="jumbotron text-light"
+      style="background-color: rgb(125, 116, 207)"; 
+      background-size: auto;"
+    >
+
+
+	 <table style="width:100" border="1" align="center" bgcolor = "#383838"  >
+  <tr>
+    
+    <th>EName</th>
+    <th>EID</th>
+	
+	
+	
+  </tr>
+
+<% for(var i=0; i<data.length; i++){          %>
+	<tr>
+	
+	<td><%= data[i].EName %></td>
+	<td><%= data[i].EID %></td>
+	
+	</tr>
+
+
+<% } %>
+</table> 
+	
+	
+
+      
+    </div>
+	
+
+
+
+
+  </body>
+</html>

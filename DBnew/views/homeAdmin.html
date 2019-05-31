@@ -1,0 +1,81 @@
+<!––home.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/litera/bootstrap.min.css"
+    />
+    <title>DB</title>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <a class="navbar-brand" >Database - Admin</a>
+      <form method="get" action="/">
+        <input type="submit" value = "Logout">
+      </form>
+    </nav>
+
+	
+    <div
+      class="jumbotron text-light"
+      style="background-color: rgb(37, 161, 99)";
+      background-repeat: no-repeat;
+      background-size: auto;"
+    >
+    
+	<h2><font size="+2">Click to insert to a table in the database</font></h2>
+
+	
+  <form>
+    <input type="Submit" onclick="javascript: form.action='/Insert';" value="Employee">
+    <input type="Submit" onclick="javascript: form.action='/InsertWO';" value="WorksOn">
+    <input type="Submit" onclick="javascript: form.action='/InsertProj';" value="Projects">
+    <input type="Submit" onclick="javascript: form.action='/InsertDep';" value="Department">
+  </form>
+
+  <br>
+  <br>
+  <h2><font size="+2">Click to delete a row from a table in the database</font></h2>
+
+  <form>
+    <input type="Submit" onclick="javascript: form.action='/DelEmp';" value="Employee">
+    <input type="Submit" onclick="javascript: form.action='/DelWO';" value="WorksOn">
+    <input type="Submit" onclick="javascript: form.action='/DelProj';" value="Projects">
+    <input type="Submit" onclick="javascript: form.action='/DelDep';" value="Department">
+  </form>
+
+  <br>
+  <br>
+  <h2><font size="+2">Click to see information in the database</font></h2>
+ 
+  <form>
+    <input type="Submit" onclick="javascript: form.action='/ShowEmpA';" value="Employee">
+    <input type="Submit" onclick="javascript: form.action='/ShowWOA';" value="WorksOn">
+    <input type="Submit" onclick="javascript: form.action='/ShowProjA';" value="Projects">
+    <input type="Submit" onclick="javascript: form.action='/ShowDepA';" value="Department">
+  </form>
+
+	
+      
+      
+    </div>
+
+	
+	
+
+
+
+
+  </body>
+</html>
